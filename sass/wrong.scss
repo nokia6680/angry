@@ -1,0 +1,59 @@
+.wrong {
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  width: 100%;
+
+  padding-top: 20px;
+
+  &__wrap {
+    @include flex-setting(column, flex-start, center, nowrap);
+  }
+
+  &__info {
+    order: 2;
+
+    @include flex-setting(column, flex-start, center, nowrap);
+
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    @include font-setting($regular-font, 1.375em, 300, $text-white);
+    text-align: center;
+    max-width: 300px;
+
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  &__description {
+    @include font-setting($regular-font, 1.125em, 400, $text-white);
+    text-align: center;
+    max-width: 300px;
+
+    margin: 0;
+  }
+
+  &__pic {
+    order: 1;
+
+    margin-bottom: 30px;
+
+    max-height: 144px;
+    min-height: 144px;
+    width: 100%;
+  }
+
+  &__img {
+    width: auto;
+    height: auto;
+    max-height: 350px;
+  }
+}

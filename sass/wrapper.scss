@@ -1,0 +1,7 @@
+.wrapper {
+  @include flex-setting(column, flex-start, flex-start, nowrap);
+  
+  min-height: 100vh;
+
+  overflow: hidden;
+}

@@ -1,0 +1,82 @@
+@mixin container {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media only screen and (min-width: $mobile) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media only screen and (min-width: $laptop-wide) {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@mixin checkbox-default {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 15px;
+}
+
+@mixin custom-checkbox {
+  position: absolute;
+  content: "";
+  display: block;
+
+  width: 12px;
+  height: 12px;
+
+  bottom: 0;
+  left: 0;
+
+  background-color: transparent;
+  border: 1px solid #b2b2b2;
+  border-radius: 0;
+}
+
+@mixin checkbox-checked {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  background-image: url('../img/tick.svg');
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+@mixin font-setting($family, $size, $font-width, $color) {
+  font-family: $family;
+  font-size: $size;
+  line-height: 1.2;
+  font-weight: $font-width;
+  color: $color;
+}
+
+@mixin flex-setting($direction, $justify, $align, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}

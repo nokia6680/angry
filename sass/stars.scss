@@ -1,0 +1,12 @@
+.stars {
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &__list {
+    margin-top: 50px;
+  }
+}

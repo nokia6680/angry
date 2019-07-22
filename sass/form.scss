@@ -1,0 +1,30 @@
+.form {
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  &__header {
+    @include flex-setting(column, center, center, nowrap);
+    display: inline-flex;
+
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 74px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-image: url('../img/form-q-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 20px;
+  }
+
+  &__question {
+    @include font-setting($regular-font, 1.033em, 400, $text-black);
+    text-align: center;
+  }
+}

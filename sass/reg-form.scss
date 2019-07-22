@@ -1,0 +1,82 @@
+.reg-form {
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  width: 100%;
+
+  border-top: 1px solid #000000;
+
+  &__title {
+    @include font-setting($regular-font, 0.875em, 300, $text-black);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    max-width: 280px;
+  }
+
+  &__submit {
+    @include flex-setting(column, center, center, nowrap);
+    @include font-setting($regular-font, 1.375em, 500, $text-black);
+
+    width: 176px;
+    height: 40px;
+
+    box-shadow: 0 0 8px rgba(184, 171, 11, 0.3), inset 0 4px 2px #90ee29, inset 0 -4px 2px #73c11e;
+    border-radius: 8px;
+    background-color: #7ed321;
+
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:active {
+      box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2) inset;
+      transition: 0.1s ease-in;
+    }
+  }
+
+  &__textarea {
+    width: 280px;
+    border: 1px solid #b2b2b2;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    margin-bottom: 5px;
+
+    resize: none;
+
+    position: relative;
+    overflow-y: scroll;
+
+    cursor: text;
+    outline: none;
+
+    font: {
+      size: 0.875em;
+      family: $regular-font;
+      weight: 400;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    line-height: normal;
+
+    height: 110px;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #b2b2b2;
+    }
+  }
+}

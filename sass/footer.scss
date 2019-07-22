@@ -1,0 +1,75 @@
+.footer {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: auto;
+
+  background-color: #000000;
+
+  @include flex-setting(row, space-between, center, nowrap);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  position: relative;
+
+  &--index {
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/pig-red.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      width: 141px;
+      height: 196px;
+
+      bottom: 10px;
+      left: -40px;
+
+      z-index: -2;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/pig-black.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      width: 140px;
+      height: 161px;
+
+      top: -280px;
+      right: -70px;
+
+      z-index: -2;
+    }
+  }
+
+  &--trailer {
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/three-birds.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      width: 272px;
+      height: 124px;
+
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      z-index: -2;
+    }
+  }
+}
