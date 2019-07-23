@@ -75,14 +75,6 @@
   }
 }
 
-@media only screen and (min-width: $mobile) {
-  .social-list {
-    @include flex-setting(row, center, center, nowrap);
-    width: auto;
-
-    margin-bottom: 17px;
-  }
-}
 
 @media only screen and (min-width: $tablet) {
   .social-list {

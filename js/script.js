@@ -41,7 +41,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    fade: false,
+    fade: true,
     arrows: true,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>'

@@ -39,3 +39,22 @@
     max-height: 195px;
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .trailer {
+    width: 340px;
+
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    &__wrap {
+      height: 220px;
+      width: 340px;
+    }
+
+    &__video {
+      max-height: 212px;
+    }
+  }
+
+}

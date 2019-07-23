@@ -5,7 +5,7 @@
 
   background-color: #000000;
 
-  @include flex-setting(row, space-between, center, nowrap);
+  @include flex-setting(column, space-between, center, nowrap);
 
   padding-top: 5px;
   padding-bottom: 5px;
@@ -13,6 +13,19 @@
   padding-right: 10px;
 
   position: relative;
+
+  &__wrap {
+    @include flex-setting(row, space-between, center, nowrap);
+    width: 100%;
+
+    margin-bottom: 5px;
+  }
+
+  &__rights {
+    @include font-setting($regular-font, 0.4em, 300, $text-white);
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
 
   &--index {
     &::after {
@@ -70,6 +83,19 @@
       transform: translateX(-50%);
 
       z-index: -2;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .footer {
+    &--trailer {
+      &::after {
+        width: 340px;
+        height: 155px;
+
+        bottom: 20px;
+      }
     }
   }
 }

@@ -23,23 +23,33 @@
 
     @include flex-setting(column, flex-start, center, nowrap);
     width: 100%;
+
+    margin-top: 150px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   &__name {
-    @include font-setting($alternate-font, 1.375em, 400, $text-white);
+    @include font-setting($alternate-font, 1.25em, 400, $text-white);
 
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     text-align: center;
   }
 
   &__description {
-    @include font-setting($regular-font, 0.75em, 400, $text-white);
+    @include font-setting($regular-font, 0.7em, 300, $text-white);
 
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     max-height: 100px;
     overflow-y: scroll;
@@ -51,31 +61,20 @@
     margin-bottom: 30px;
 
     width: auto;
-    height: 120px;
-    min-height: 120px;
-    max-height: 120px;
+    min-height: 190px;
+    max-height: 190px;
+    height: 190px;
 
-    position: relative;
+    position: absolute;
 
-    &::before {
-      position: absolute;
-      content: '';
-
-      width: 56px;
-      height: 2px;
-
-      background-image: url('../img/slide-line.svg');
-      background-size: 56px 2px;
-
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    z-index: -1;
   }
 
   &__img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    min-height: 190px;
+    max-height: 190px;
+    height: 190px;
   }
 
   .slick-dots {
@@ -91,7 +90,7 @@
 
     position: absolute;
 
-    bottom: -10px;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -149,7 +148,7 @@
   .prev {
     position: absolute;
 
-    top: 38%;
+    top: 25%;
     left: 0px;
 
     background-image: url('../img/arrow-left.svg');
@@ -162,7 +161,7 @@
   .next {
     position: absolute;
 
-    top: 38%;
+    top: 25%;
     right: 0px;
 
     background-image: url('../img/arrow-right.svg');
@@ -170,5 +169,50 @@
     background-size: 17px 31px;
 
     z-index: 4;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .stars-slider {
+    width: 340px;
+
+    &__info {
+      margin-top: 140px;
+    }
+
+    &__name {
+      font-size: 1.375em;
+    }
+
+    &__description {
+      font-size: 0.875em;
+    }
+
+    .slick-dots {
+      bottom: -25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (min-device-height: 770px) {
+  .stars-slider {
+    width: 340px;
+
+    &__info {
+      margin-top: 220px;
+      background-color: transparent;
+    }
+
+    &__name {
+      font-size: 1.375em;
+    }
+
+    &__description {
+      font-size: 0.875em;
+    }
+
+    .slick-dots {
+      bottom: -25px;
+    }
   }
 }

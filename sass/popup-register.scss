@@ -71,3 +71,28 @@
     max-width: 200px;
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .popup-register {
+    &__wrapper {
+      width: 330px;
+
+      border-radius: 30px;
+    }
+
+    &__close {
+      width: 25px;
+      height: 25px;
+
+      top: -5px;
+      right: -5px;
+
+      background-size: 15px 15px;
+    }
+
+    &__title {
+      font-size: 1em;
+      max-width: 240px;
+    }
+  }
+}

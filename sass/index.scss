@@ -16,3 +16,12 @@
     max-width: 300px;
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .index {
+    &__description {
+      max-width: 340px;
+      margin-top: 0;
+    }
+  }
+}

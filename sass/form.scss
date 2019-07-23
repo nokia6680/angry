@@ -28,3 +28,17 @@
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .form {
+    &__header {
+      min-width: 328px;
+      max-width: 328px;
+      min-height: 84px;
+    }
+
+    &__question {
+      font-size: 1.125em;
+    }
+  }
+}

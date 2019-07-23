@@ -78,3 +78,29 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .nav {
+    &--active {
+      top: 133px;
+    }
+
+    &__list {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &__link {
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      font-size: 1.375em;
+
+      &::before {
+        width: 90%;
+
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+}

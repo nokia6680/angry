@@ -119,3 +119,55 @@
     @include checkbox-checked;
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .reg-list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &__item {
+      margin-bottom: 20px;
+
+      &--second {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__check {
+      width: 14px;
+      height: 14px;
+
+      left: 15px;
+
+
+      &--checkbox {
+        top: 0%;
+      }
+
+      &--fail {
+        background-size: 8px 8px;
+      }
+
+      &--done {
+        background-size: 14px 14px;
+      }
+    }
+
+    &__label {
+      font-size: 0.875em;
+
+      &--checkbox {
+        font-size: 0.7em;
+      }
+    }
+
+    &__input {
+      font-size: 1.125em;
+    }
+
+    &__error {
+      font-size: 0.625em;
+      bottom: -15px;
+    }
+  }
+}
