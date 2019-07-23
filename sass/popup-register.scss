@@ -96,3 +96,26 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .popup-register {
+    &__wrapper {
+      width: 336px;
+
+      border-radius: 32px;
+
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+
+    &__close {
+      top: -25px;
+      right: -25px;
+    }
+
+    &__title {
+      max-width: 288px;
+      font-weight: 700;
+    }
+  }
+}

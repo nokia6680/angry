@@ -97,3 +97,32 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 21px;
+
+    &__logo {
+      min-width: 370px;
+      max-width: 370px;
+      height: 207px;
+    }
+
+    &__btn {
+      right: 48px;
+      top: 24px;
+
+      min-width: 88px;
+      height: 88px;
+
+      &--open {
+        background-size: 64px 64px;
+      }
+
+      &--close {
+        background-size: 64px 64px;
+      }
+    }
+  }
+}

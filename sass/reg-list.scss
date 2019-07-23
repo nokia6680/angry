@@ -171,3 +171,49 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .reg-list {
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    &__item {
+      margin-bottom: 20px;
+      padding-left: 32px;
+
+      &--second {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__check {
+      width: 12px;
+      height: 12px;
+
+      left: 16px;
+
+      &--fail {
+        background-size: 6px 6px;
+      }
+
+      &--done {
+        background-size: 12px 12px;
+      }
+    }
+
+    &__label {
+      font-size: 0.875em;
+
+      &--checkbox {
+        font-size: 0.7em;
+      }
+    }
+
+    &__input {
+      font-size: 1em;
+      height: 32px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

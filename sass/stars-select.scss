@@ -112,3 +112,43 @@
     transform: rotate(180deg);
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .stars-select {
+    width: 400px;
+
+    .select {
+      min-width: 400px;
+      max-width: 400px;
+    }
+
+    .select-wrap {
+      max-width: 400px;
+    }
+
+    .select-wrap select {
+      margin: 10px;
+    }
+
+    .select__gap {
+      font: {
+        size: 1.375em;
+      }
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    .select__list {
+      max-height: 400px;
+    }
+
+    .select__item span {
+      padding: 7px 10px;
+
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}

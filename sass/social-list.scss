@@ -78,32 +78,33 @@
 
 @media only screen and (min-width: $tablet) {
   .social-list {
-    margin-bottom: 11px;
+    margin-bottom: 0px;
 
     &__item {
-      width: 32px;
-      height: 32px;
+      width: 23px;
+      height: 23px;
+      margin-right: 16px;
 
-      &:not(:last-of-type) {
-        margin-right: 16px;
+      &:last-of-type {
+        margin-right: 0;
       }
     }
 
     &__link {
       .fa-facebook-f::before {
-        font-size: 1.25em;
+        font-size: 1em;
       }
 
       .fa-vk::before {
-        font-size: 1.25em;
+        font-size: 1em;
       }
 
       .fa-twitter::before {
-        font-size: 1.25em;
+        font-size: 1em;
       }
 
       .fa-instagram::before {
-        font-size: 1.25em;
+        font-size: 1em;
       }
     }
   }

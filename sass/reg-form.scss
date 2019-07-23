@@ -101,3 +101,20 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .reg-form {
+    &__title {
+      font-size: 1em;
+      max-width: 288px;
+      font-weight: 700;
+    }
+
+    &__textarea {
+      width: 256px;
+      margin-bottom: 16px;
+
+      height: 104px;
+    }
+  }
+}

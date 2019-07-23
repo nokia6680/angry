@@ -99,3 +99,43 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+    padding-right: 48px;
+
+    &__logo {
+      width: 124px;
+      height: 18px;
+    }
+
+    &--index {
+      &::after {
+        width: 404px;
+        height: 560px;
+
+        bottom: -40px;
+        left: -195px;
+      }
+
+      &::before {
+        width: 405px;
+        height: 462px;
+        top: -500px;
+        right: -170px;
+      }
+    }
+
+    &--trailer {
+      &::after {
+        width: 680px;
+        height: 311px;
+
+        bottom: 20px;
+      }
+    }
+  }
+}

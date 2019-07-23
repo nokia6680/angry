@@ -104,3 +104,23 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    &--active {
+      top: 244px;
+    }
+
+    &__list {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    &__link {
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+      font-size: 1.875em;
+    }
+  }
+}

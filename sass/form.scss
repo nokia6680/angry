@@ -42,3 +42,19 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .form {
+    &__header {
+      min-width: 387px;
+      max-width: 387px;
+      min-height: 99px;
+
+      margin-bottom: 32px;
+    }
+
+    &__question {
+      font-size: 1.588em;
+    }
+  }
+}
