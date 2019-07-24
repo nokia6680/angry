@@ -106,3 +106,49 @@
     }
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .success {
+    margin-top: -20px;
+
+    &__wrap {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__info {
+      order: 1;
+      margin-top: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    &__title {
+      font-size: 2em;
+      max-width: 500px;
+    }
+
+    &__description {
+      font-size: 1.25em;
+      max-width: 350px;
+    }
+
+    &__pic {
+      order: 2;
+      position: relative;
+      max-height: 403px;
+      min-height: 403px;
+      width: 342px;
+      min-width: 342px;
+
+      margin-bottom: 0;
+
+      z-index: 0;
+    }
+
+    &__img {
+      max-height: 403px;
+    }
+  }
+}

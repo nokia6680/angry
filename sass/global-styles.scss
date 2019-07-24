@@ -32,6 +32,7 @@ body {
   height: 100vh;
 
   position: relative;
+  overflow: hidden;
 
   color: $text-black;
   font-family: $regular-font;
@@ -46,6 +47,10 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media only screen and (min-width: 1366px) {
+    background-image: url('../img/index-bg-laptop.jpg');
+  }
 }
 
 .body-stars {
@@ -60,6 +65,8 @@ body {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  overflow: hidden;
 }
 
 .body-success {

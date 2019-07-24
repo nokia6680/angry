@@ -152,3 +152,59 @@
     }
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .stars-select {
+    width: 176px;
+
+    z-index: 10;
+
+    .select {
+      min-width: 176px;
+      max-width: 176px;
+    }
+
+    .select-wrap {
+      max-width: 176px;
+    }
+
+    .select-wrap select {
+      margin: 10px;
+    }
+
+    .on.select__gap,
+    .select__gap:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .select__gap {
+      font: {
+        size: 1em;
+      }
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+    }
+
+    .select__list {
+      max-height: 330px;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .select__item span {
+      padding: 3px 8px;
+
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    .select__item.selected,
+    .select__item span:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}

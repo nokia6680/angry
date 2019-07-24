@@ -76,3 +76,26 @@
     }
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .trailer {
+    align-items: flex-end;
+    width: 100%;
+
+    padding-top: 0px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+
+    &__wrap {
+      margin-left: auto;
+      margin-right: 0;
+      height: 331px;
+      width: 592px;
+      border-width: 8px;
+    }
+
+    &__video {
+      max-height: 315px;
+    }
+  }
+}

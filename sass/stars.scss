@@ -7,3 +7,15 @@
     margin-top: 50px;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .stars {
+    align-items: flex-end;
+
+    margin-top: -60px;
+
+    &__list {
+      margin-top: 70px;
+    }
+  }
+}

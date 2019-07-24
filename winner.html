@@ -48,6 +48,8 @@
 					</li>
 				</ul>
 			</nav>
+			<button class="header__btn header__btn--open" type="button" name="button"></button>
+			<button class="header__btn header__btn--close hidden" type="button" name="button"></button>
 		</header>
 		<!--Основное содержание-->
 		<main class="main">
@@ -81,26 +83,32 @@
 		</main>
 		<!--Page footer-->
 		<footer class="footer">
-			<div class="footer__logo">
-				<a class="footer__link" href="#" target="_blank">
-					<img class="footer__img" src="img/nick-logo.svg" alt="Nickelodeon Rus" />
-				</a>
+			<div class="footer__wrap">
+				<div class="footer__logo">
+					<a class="footer__link" href="#" target="_blank">
+						<img class="footer__img" src="img/footer-logo.svg" alt="Nickelodeon Rus" />
+					</a>
+				</div>
+				<!--Social media block-->
+				<ul class="footer__social social-list">
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--in" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--fb" href="https://www.facebook.com/NickelodeonRussia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--tw" href="https://twitter.com/NickTVru" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--vk" href="https://vk.com/nickelodeonru" target="_blank"><i class="fab fa-vk"></i></a>
+					</li>
+				</ul>
 			</div>
-			<!--Social media block-->
-			<ul class="footer__social social-list">
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--in" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fab fa-instagram"></i></a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--fb" href="https://www.facebook.com/NickelodeonRussia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--tw" href="https://twitter.com/NickTVru" target="_blank"><i class="fab fa-twitter"></i></a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--vk" href="https://vk.com/nickelodeonru" target="_blank"><i class="fab fa-vk"></i></a>
-				</li>
-			</ul>
+			<div class="footer__container">
+				<span class="footer__rights">Angry Birds™ & ©2019 Rovio Entertainment Corporation and Rovio Animation Ltd.</span>
+				<span class="footer__rights">The Angry Birds Movie 2 ©2019 CPII. All Rights Reserved</span>
+			</div>
 		</footer>
 	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>

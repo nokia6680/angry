@@ -14,11 +14,6 @@
 
     display: block;
 
-    &--tip {
-      top: 95%;
-      transform: translateY(-95%);
-    }
-
     .top-panel {
       position: fixed;
       top: 50%;
@@ -26,24 +21,20 @@
       transform: translateY(-50%);
       background-color: rgba(255, 255, 255, 1);
       width: 250px;
-      min-height: 280px;
+      min-height: 200px;
+      max-height: 200px;
 
       z-index: 1002;
 
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-left: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 25px;
       padding-right: 15px;
 
-      border-top-left-radius: 40px;
-      border-bottom-left-radius: 40px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
 
       transition: 0.5s ease-in-out;
-
-      &--tip {
-        top: 85%;
-        transform: translateY(-85%);
-      }
 
       &--active {
         right: 0;
@@ -98,12 +89,12 @@
 
       &__text {
         font: {
-          size: 0.906em;
+          size: 0.75em;
           family: $regular-font;
-          weight: 700;
+          weight: 400;
         }
 
-        color: red;
+        color: $text-black;
       }
     }
 
@@ -117,8 +108,8 @@
       transform: translateY(-50%);
 
       border: none;
-      border-top-left-radius: 40px;
-      border-bottom-left-radius: 40px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
 
       background-color: #ffffff;
       padding: 8px 16px;
@@ -126,8 +117,8 @@
       cursor: pointer;
       outline: none;
 
-      height: 280px;
-      width: 63px;
+      height: 200px;
+      width: 40px;
 
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
       -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
@@ -145,9 +136,9 @@
       display: block;
 
       font: {
-        size: 2em;
+        size: 1.25em;
         family: $regular-font;
-        weight: 700;
+        weight: 400;
       }
 
       color: $text-black;
@@ -157,7 +148,7 @@
 
       width: 100%;
 
-      margin-top: 200px;
+      margin-top: 130px;
 
       text-transform: uppercase;
     }
