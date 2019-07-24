@@ -242,3 +242,32 @@
     }
   }
 }
+
+@media only screen and (min-width: 1366px) {
+  .footer {
+    &--index {
+      &::after {
+        width: 262px;
+        height: 364px;
+
+        bottom: 10px;
+        left: 29%;
+
+        transition: 0.2s ease-in;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &--trailer {
+      &::after {
+        width: 680px;
+        height: 311px;
+
+        bottom: -30px;
+      }
+    }
+  }
+}

@@ -200,22 +200,6 @@
 
       margin-bottom: 60px;
       font-weight: 500;
-
-      position: relative;
-
-      &::after {
-        position: absolute;
-        content: '';
-
-        width: 136px;
-        height: 2px;
-
-        background-color: #ffffff;
-
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
     }
 
     &__description {
@@ -244,6 +228,23 @@
       width: auto;
       max-width: 600px;
       min-width: 600px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrong {
+
+    &__pic {
+      max-height: 352px;
+      max-width: 420px;
+      min-width: 420px;
+    }
+
+    &__img {
+      max-height: 352px;
+      max-width: 420px;
+      min-width: 420px;
     }
   }
 }

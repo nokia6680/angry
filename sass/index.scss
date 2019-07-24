@@ -49,3 +49,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 1366px) {
+  .index {
+    align-items: flex-end;
+    margin-top: -70px;
+
+    &__description {
+      font-size: 1.25em;
+      max-width: 592px;
+      margin-top: -50px;
+      margin-bottom: 25px;
+    }
+  }
+}

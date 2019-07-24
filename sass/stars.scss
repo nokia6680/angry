@@ -35,3 +35,18 @@
     }
   }
 }
+
+@media only screen and (min-width: 1366px) {
+  .stars {
+    width: 1172px;
+    margin: 0 auto;
+
+    transition: 0.2s ease-in;
+
+    margin-top: -120px;
+
+    &__list {
+      margin-top: -80px;
+    }
+  }
+}
