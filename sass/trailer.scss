@@ -134,3 +134,19 @@
     }
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .trailer {
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+    &__wrap {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -271,3 +271,47 @@
     }
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .footer {
+    &--index {
+      &::after {
+        width: 303px;
+        height: 420px;
+
+        left: 30%;
+      }
+    }
+
+    &--trailer {
+      &::after {
+        width: 1020px;
+        height: 467px;
+
+        bottom: -30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .footer {
+    &--index {
+      &::after {
+        width: 373px;
+        height: 517px;
+
+        left: 30%;
+      }
+    }
+
+    &--trailer {
+      &::after {
+        width: 1360px;
+        height: 623px;
+
+        bottom: -60px;
+      }
+    }
+  }
+}

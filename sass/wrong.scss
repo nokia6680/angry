@@ -232,7 +232,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1366px) {
   .wrong {
 
     &__pic {
@@ -245,6 +245,25 @@
       max-height: 352px;
       max-width: 420px;
       min-width: 420px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .wrong {
+
+    &__pic {
+      max-height: 504px;
+      min-height: 352px;
+      max-width: 600px;
+      min-width: 600px;
+    }
+
+    &__img {
+      max-height: 504px;
+      min-height: 352px;
+      max-width: 600px;
+      min-width: 600px;
     }
   }
 }

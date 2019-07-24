@@ -204,3 +204,18 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 1600px) {
+  .success {
+    &__pic {
+      max-height: 616px;
+      min-width: 350px;
+    }
+
+    &__img {
+      max-height: 616px;
+      min-width: 350px;
+    }
+  }
+}

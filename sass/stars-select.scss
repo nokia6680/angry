@@ -60,7 +60,17 @@
 
     max-height: 330px;
     overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+
   }
+
   .select__list.on {
     display: block;
   }
