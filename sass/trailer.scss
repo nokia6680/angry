@@ -99,3 +99,26 @@
     }
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .trailer {
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+    &__wrap {
+      margin-left: auto;
+      margin-right: auto;
+      height: 331px;
+      width: 592px;
+      border-width: 8px;
+    }
+
+    &__video {
+      max-height: 315px;
+    }
+  }
+}

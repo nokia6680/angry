@@ -55,3 +55,51 @@
     }
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .form-list {
+    &__item {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .form-list {
+    &__item {
+      margin-bottom: 35px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .form-list {
+    &__item {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .form-list {
+    &__item {
+      margin-bottom: 35px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

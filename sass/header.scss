@@ -148,3 +148,29 @@
     }
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 1172px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin: 0 auto;
+
+    &__logo {
+      min-width: 337px;
+      max-width: 337px;
+      height: 189px;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}

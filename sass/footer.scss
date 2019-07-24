@@ -215,3 +215,30 @@
     }
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    &--index {
+      &::after {
+        width: 404px;
+        height: 560px;
+
+        bottom: 10px;
+        left: 19%;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &--trailer {
+      &::after {
+        width: 1020px;
+        height: 467px;
+
+        bottom: -30px;
+      }
+    }
+  }
+}

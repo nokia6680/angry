@@ -14,3 +14,11 @@
     padding-right: 48px;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .main {
+    width: 1172px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

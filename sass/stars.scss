@@ -13,9 +13,25 @@
     align-items: flex-end;
 
     margin-top: -60px;
+    transition: 0.2s ease-in;
 
     &__list {
       margin-top: 70px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .stars {
+    width: 1172px;
+    margin: 0 auto;
+
+    transition: 0.2s ease-in;
+
+    margin-top: -110px;
+
+    &__list {
+      margin-top: -80px;
     }
   }
 }
