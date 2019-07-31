@@ -1,0 +1,160 @@
+.prize-single {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  margin-bottom: 20px;
+
+  &__item {
+    @include flex-setting(column, space-between, center, nowrap);
+    height: 100%;
+  }
+
+  &__img {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+
+    margin-bottom: 20px;
+
+    &--second {
+      background-image: url('../img/second-prize.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+
+    &--third {
+      background-image: url('../img/third-prize.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+  }
+
+  &__description {
+    @include font-setting($regular-font, 0.875em, 400, #ffffff);
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 4px;
+    height: 32px;
+    max-width: 300px;
+  }
+
+  &__note {
+    @include font-setting($regular-font, 0.75em, 400, rgba(255, 255, 255, 0.5));
+
+    text-align: center;
+    height: 10px;
+    margin-bottom: 4px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .prize-single {
+    margin-bottom: 20px;
+
+    &__img {
+      min-width: 330px;
+      max-width: 330px;
+      min-height: 180px;
+      max-height: 180px;
+
+      margin-bottom: 0px;
+    }
+
+    &__description {
+      font-size: 1em;
+      height: 38px;
+      max-width: 320px;
+    }
+
+    &__note {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .prize-single {
+    margin-bottom: 20px;
+
+    &__img {
+      min-width: 509px;
+      max-width: 618px;
+      min-height: 391px;
+      max-height: 391px;
+
+      margin-bottom: 0px;
+    }
+
+    &__description {
+      font-size: 1em;
+      height: 38px;
+      max-width: 350px;
+      margin-bottom: 7px;
+    }
+
+    &__note {
+      font-size: 0.75em;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .prize-single {
+    margin-bottom: 0px;
+
+    &__img {
+      min-width: 400px;
+      max-width: 618px;
+      min-height: 350px;
+      max-height: 350px;
+
+      margin-bottom: 0px;
+    }
+
+    &__description {
+      font-size: 1em;
+      height: 38px;
+      max-width: 350px;
+      margin-bottom: 7px;
+    }
+
+    &__note {
+      font-size: 0.75em;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .prize-single {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .prize-single {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .prize-single {
+    margin-bottom: 30px;
+
+    &__img {
+      min-width: 509px;
+      max-width: 618px;
+      min-height: 391px;
+      max-height: 391px;
+
+      margin-bottom: 0px;
+    }
+  }
+}

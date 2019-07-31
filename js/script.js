@@ -78,6 +78,21 @@ $(document).ready(function() {
   });
 });
 
+/*Слайдер персонажей*/
+$(document).ready(function() {
+  $('.prize-slider').slick({
+    infinite: true,
+    initialSlide: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    arrows: true,
+    prevArrow: '<div class="prev-1"></div>',
+    nextArrow: '<div class="next-1"></div>'
+  });
+});
+
 // Select
 $('.select').each(function() {
   // Variables
@@ -139,5 +154,15 @@ $('.select').each(function() {
       selectList.slideUp(dur);
     }
   });
+});
 
+$(".prize-single").hide();
+$(".prize-single:first").show();
+/* в режиме вкладок */
+$(".prize-controls__item").click(function () {
+    $(".prize-single").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+    $(".prize-controls__item").removeClass("prize-controls__item--active");
+    $(this).addClass("prize-controls__item--active");
 });

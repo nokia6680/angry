@@ -1,0 +1,57 @@
+.prize-controls {
+  width: 300px;
+
+  @include flex-setting(row, space-around, center, nowrap);
+
+  &__item {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    @include font-setting($regular-font, 1em, 400, #ffffff);
+    text-align: center;
+    text-transform: uppercase;
+
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #56a7d7;
+    }
+
+    &--active {
+      background-color: #ffffff;
+      color: #56a7d7;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .prize-controls {
+    width: 500px;
+
+    @include flex-setting(row, space-between, center, nowrap);
+
+    &__item {
+      border-width: 4px;
+
+      width: 160px;
+      height: 57px;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      font-size: 1.75em;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .prize-controls {
+    width: 550px;
+  }
+}

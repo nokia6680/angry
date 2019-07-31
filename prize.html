@@ -43,7 +43,7 @@
 						<a class="nav__link" href="gallery.html" target="_self">Галерея работ</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="winner" target="_self">Победители</a>
+						<a class="nav__link" href="winner.html" target="_self">Победители</a>
 					</li>
 				</ul>
 			</nav>
@@ -54,32 +54,72 @@
 		<main class="main">
 			<!--Секция призов-->
 			<section class="main__prize prize">
-				<h1 class="prize__title">Призы</h1>
-			</section>
-			<!--Выдвигающаяся панель про участие-->
-			<div class="main__slide slide-panel">
-				<button class="open-btn" type="button"><span class="btn-span">Как&nbsp;участвовать</span></button>
-				<div class="top-panel">
-					<button class="top-panel__close" type="button"></button>
-					<ul class="top-panel__list panel-list">
-						<li class="panel-list__item">
-							<span class="panel-list__text">1. Отвечай на вопросы викторины.</span>
-						</li>
-						<li class="panel-list__item">
-							<span class="panel-list__text">2. Если ты ответил правильно, оставь своё имя и телефон в специальном окошке.</span>
-						</li>
-						<li class="panel-list__item">
-							<span class="panel-list__text">3. Если хочешь побороться за суперприз, напиши сочинение на тему «Чего зимнего тебе не хватает летом?».</span>
-						</li>
-						<li class="panel-list__item">
-							<span class="panel-list__text">4. Возвращайся завтра и отвечай ещё раз, чтобы увеличить свои шансы на победу!</span>
-						</li>
-					</ul>
+				<!--Для первого места-->
+				<div class="prize__single prize-single prize-single--active" id="first" style="display: flex;">
+					<div class="prize-single__slider prize-slider">
+						<div class="prize-slider__item">
+							<div class="prize-slider__img prize-slider__img--first1"></div>
+							<p class="prize-slider__description">Суперприз – поездка в Финляндию для всей семьи, где ты сможешь встретиться с любимыми героями в парке развлечений Angry Birds Activity Park!</p>
+						</div>
+						<div class="prize-slider__item">
+							<div class="prize-slider__img prize-slider__img--first2"></div>
+							<p class="prize-slider__description">Суперприз – поездка в Финляндию для всей семьи, где ты сможешь встретиться с любимыми героями в парке развлечений Angry Birds Activity Park!</p>
+						</div>
+						<div class="prize-slider__item">
+							<div class="prize-slider__img prize-slider__img--first3"></div>
+							<p class="prize-slider__description">Суперприз – поездка в Финляндию для всей семьи, где ты сможешь встретиться с любимыми героями в парке развлечений Angry Birds Activity Park!</p>
+						</div>
+					</div>
+					<div class="prev-1"></div>
+					<div class="next-1"></div>
 				</div>
-			</div>
+				<!--Для второго места-->
+				<div class="prize__single prize-single" id="second" style="display: none;">
+					<div class="prize-single__item">
+						<div class="prize-single__img prize-single__img--second"></div>
+						<p class="prize-single__description">Автор сочинения, которое займёт второе место, получит крутой смартфон от Sony!</p>
+						<span class="prize-single__note">Цвет может отличаться от изображения</span>
+					</div>
+				</div>
+				<!--Для третьего-пятого места-->
+				<div class="prize__single prize-single" id="third" style="display: none;">
+					<div class="prize-single__item">
+						<div class="prize-single__img prize-single__img--third"></div>
+						<p class="prize-single__description">Авторы ещё трёх классных сочинений получат разноцветные портативные аудиоколонки от Sony!</p>
+						<span class="prize-single__note">Цвет может отличаться от изображения</span>
+					</div>
+				</div>
+				<!--Блок кнопок-->
+				<div class="prize__controls prize-controls">
+					<button class="prize-controls__item prize-controls__item--active" type="button" rel="first">1 место</button>
+					<button class="prize-controls__item" type="button" rel="second">2 место</button>
+					<button class="prize-controls__item" type="button" rel="third">3-5 места</button>
+				</div>
+			</section>
 			<!---->
 			<div class="cover"></div>
 		</main>
+		<!--Выдвигающаяся панель про участие-->
+		<div class="main__slide slide-panel">
+			<button class="open-btn" type="button"><span class="btn-span">Как&nbsp;участвовать</span></button>
+			<div class="top-panel">
+				<button class="top-panel__close" type="button"></button>
+				<ul class="top-panel__list panel-list">
+					<li class="panel-list__item">
+						<span class="panel-list__text">1. Отвечай на вопросы викторины.</span>
+					</li>
+					<li class="panel-list__item">
+						<span class="panel-list__text">2. Если ты ответил правильно, оставь своё имя и телефон в специальном окошке.</span>
+					</li>
+					<li class="panel-list__item">
+						<span class="panel-list__text">3. Если хочешь побороться за суперприз, напиши сочинение на тему «Чего зимнего тебе не хватает летом?».</span>
+					</li>
+					<li class="panel-list__item">
+						<span class="panel-list__text">4. Возвращайся завтра и отвечай ещё раз, чтобы увеличить свои шансы на победу!</span>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<!--Page footer-->
 		<footer class="footer">
 			<div class="footer__wrap">

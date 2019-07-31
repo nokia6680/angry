@@ -1,0 +1,104 @@
+.popup-mistake {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    width: 300px;
+    height: 256px;
+
+    border-radius: 20px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+
+    padding-top: 10px;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 272px;
+      height: 173px;
+
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('../img/popup-mistake.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+  }
+
+  &__close {
+    width: 20px;
+    height: 20px;
+
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    cursor: pointer;
+    outline: none;
+
+    background-color: #f05228;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 63.55'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eclose-cross%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cpath class='cls-1' d='M28.94,31.79.61,60.11A2,2,0,0,0,.61,63,2,2,0,0,0,2,63.55,2,2,0,0,0,3.46,63L32,34.42,60.54,63a2,2,0,0,0,2.85,0,2,2,0,0,0,0-2.85L35.06,31.79,63.41,3.44A2,2,0,0,0,60.56.59L32,29.15,3.44.59A2,2,0,0,0,.59,3.44Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  }
+
+  &__title {
+    @include font-setting($regular-font, 1.375em, 300, $text-black);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .popup-mistake {
+    &__wrapper {
+      width: 336px;
+      height: 256px;
+
+      border-radius: 32px;
+
+      padding-top: 18px;
+    }
+  }
+}

@@ -60,6 +60,20 @@ body {
   background-size: cover;
 }
 
+.body-prize {
+  background-image: radial-gradient(1080px 1080px at 50% 62.2%, #5db7e1 0%, #4177ba 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-winner {
+  background-image: radial-gradient(1080px 1080px at 50% 62.2%, #e09914 0%, #c36100 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .body-trailer {
   background-image: url('../img/trailer-bg.jpg');
   background-position: bottom center;

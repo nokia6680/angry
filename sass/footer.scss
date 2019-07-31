@@ -21,6 +21,13 @@
     margin-bottom: 5px;
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &__rights {
     @include font-setting($regular-font, 0.4em, 300, $text-white);
     text-transform: uppercase;
@@ -85,6 +92,29 @@
       z-index: -2;
     }
   }
+
+  &--winner {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/winner-bottom.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      width: 303px;
+      height: 161px;
+
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      z-index: -2;
+    }
+  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -97,12 +127,18 @@
         bottom: 20px;
       }
     }
+  }
+}
 
-    &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
+@media only screen and (min-width: 414px) {
+  .footer {
+    &--winner {
+      &::after {
+        width: 364px;
+        height: 193px;
+
+        bottom: 0px;
+      }
     }
   }
 }
@@ -154,6 +190,15 @@
         height: 311px;
 
         bottom: 20px;
+      }
+    }
+
+    &--winner {
+      &::after {
+        width: 607px;
+        height: 323px;
+
+        bottom: 0px;
       }
     }
   }
@@ -213,6 +258,15 @@
         bottom: -30px;
       }
     }
+
+    &--winner {
+      &::after {
+        width: 607px;
+        height: 323px;
+
+        bottom: -50px;
+      }
+    }
   }
 }
 
@@ -238,6 +292,15 @@
         height: 467px;
 
         bottom: -30px;
+      }
+    }
+
+    &--winner {
+      &::after {
+        width: 910px;
+        height: 484px;
+
+        bottom: -50px;
       }
     }
   }
@@ -269,6 +332,15 @@
         bottom: -30px;
       }
     }
+
+    &--winner {
+      &::after {
+        width: 607px;
+        height: 323px;
+
+        bottom: -50px;
+      }
+    }
   }
 }
 
@@ -289,6 +361,16 @@
         height: 467px;
 
         bottom: -30px;
+      }
+    }
+
+    &--winner {
+      &::after {
+        width: 1214px;
+        height: 746px;
+        background-size: contain;
+
+        bottom: -180px;
       }
     }
   }
