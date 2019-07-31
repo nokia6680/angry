@@ -26,6 +26,32 @@
   }
 }
 
+@media only screen and (min-width: 414px) {
+  .index {
+    &__wrap {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 88px;
+        height: 55px;
+
+        background-image: url('../img/prize-1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+
+        bottom: -50px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .index {
     &__description {
@@ -33,6 +59,15 @@
       max-width: 592px;
       margin-top: 0;
       margin-bottom: 25px;
+    }
+
+    &__wrap {
+      &::after {
+        width: 132px;
+        height: 83px;
+
+        bottom: -100px;
+      }
     }
   }
 }
@@ -47,6 +82,32 @@
       margin-top: -50px;
       margin-bottom: 25px;
     }
+
+    &__wrap {
+      &::after {
+        width: 132px;
+        height: 83px;
+
+        bottom: -25px;
+        left: auto;
+        right: -95px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .index {
+    &__wrap {
+      &::after {
+        width: 176px;
+        height: 109px;
+
+        bottom: -125px;
+        left: 50%;
+        right: auto;
+      }
+    }
   }
 }
 
@@ -54,9 +115,30 @@
   .index {
     align-items: flex-end;
     margin-top: -70px;
+
+    &__wrap {
+      &::after {
+        width: 132px;
+        height: 83px;
+
+        bottom: -80px;
+      }
+    }
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .index {
+    &__wrap {
+      &::after {
+        width: 176px;
+        height: 109px;
+
+        bottom: -140px;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 1920px) {
   .index {
     margin-top: -100px;
