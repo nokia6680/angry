@@ -103,7 +103,6 @@ gulp.task("scripts", function() {
 gulp.task("build", function(done) {
   run(
     "clean",
-    "webp",
     "copy",
     "style",
     "sprite",

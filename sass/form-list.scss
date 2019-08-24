@@ -27,7 +27,7 @@
   }
 
   &__label {
-    @include font-setting($regular-font, 1em, 500, $text-black);
+    @include font-setting($regular-font, 0.625em, 500, $text-black);
     text-align: center;
 
     cursor: pointer;
@@ -45,7 +45,7 @@
     }
 
     &__label {
-      font-size: 1.375em;
+      font-size: 0.875em;
     }
   }
 }
@@ -94,6 +94,10 @@
       &:last-of-type {
         margin-bottom: 0;
       }
+    }
+
+    &__label {
+      font-size: 1em;
     }
   }
 }

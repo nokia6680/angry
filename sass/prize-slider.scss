@@ -3,6 +3,14 @@
 
   position: relative;
 
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    display: flex;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
   &__item {
     @include flex-setting(column, flex-start, center, nowrap);
     display: flex !important;
@@ -26,14 +34,35 @@
     }
 
     &--first2 {
-      background-image: url('../img/prize-2.png');
+      background-image: url('../img/angry1.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50% 50%;
     }
 
     &--first3 {
-      background-image: url('../img/prize-3.png');
+      background-image: url('../img/angry2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+
+    &--first4 {
+      background-image: url('../img/prize-2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+
+    &--third1 {
+      background-image: url('../img/front-second-prize.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+
+    &--third2 {
+      background-image: url('../img/side-second-prize.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50% 50%;
@@ -51,10 +80,29 @@
     height: 50px;
 
     max-width: 300px;
+    min-width: 300px;
+
+    &--small {
+      height: 32px;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__note {
+    @include font-setting($regular-font, 0.75em, 400, rgba(255, 255, 255, 0.5));
+
+    text-align: center;
+    height: 10px;
+    margin-bottom: 4px;
+
+    max-width: 300px;
+    min-width: 300px;
   }
 
   .prev-1,
-  .next-1 {
+  .next-1,
+  .prev-2,
+  .next-2 {
     display: block;
 
     width: 17px;
@@ -71,7 +119,8 @@
     }
   }
 
-  .prev-1 {
+  .prev-1,
+  .prev-2 {
     position: absolute;
 
     top: 25%;
@@ -84,7 +133,8 @@
     z-index: 4;
   }
 
-  .next-1 {
+  .next-1,
+  .next-2 {
     position: absolute;
 
     top: 25%;
@@ -129,14 +179,30 @@
       height: 57px;
 
       max-width: 340px;
+      min-width: 340px;
+
+      &--small {
+        height: 38px;
+        max-width: 320px;
+        min-width: 320px;
+        margin-bottom: 4px;
+      }
     }
 
-    .prev-1 {
+    &__note {
+      margin-bottom: 5px;
+      max-width: 340px;
+      min-width: 340px;
+    }
+
+    .prev-1,
+    .prev-2 {
       top: 32%;
       left: 0px;
     }
 
-    .next-1 {
+    .next-1,
+    .next-2 {
       top: 32%;
       right: 0px;
     }
@@ -165,16 +231,33 @@
     &__description {
       height: 57px;
       max-width: 350px;
+      min-width: 350px;
 
       margin-bottom: 13px;
+
+      &--small {
+        height: 38px;
+        max-width: 350px;
+        min-width: 350px;
+        margin-bottom: 7px;
+      }
     }
 
-    .prev-1 {
+    &__note {
+      font-size: 0.75em;
+      margin-bottom: 15px;
+      max-width: 350px;
+      min-width: 350px;
+    }
+
+    .prev-1,
+    .prev-2 {
       top: 40%;
       left: -5%;
     }
 
-    .next-1 {
+    .next-1,
+    .next-2 {
       top: 40%;
       right: -5%;
     }
@@ -203,16 +286,33 @@
     &__description {
       height: 57px;
       max-width: 400px;
+      min-width: 400px;
 
       margin-bottom: 13px;
+
+      &--small {
+        height: 38px;
+        max-width: 350px;
+        min-width: 350px;
+        margin-bottom: 7px;
+      }
     }
 
-    .prev-1 {
+    &__note {
+      font-size: 0.75em;
+      margin-bottom: 15px;
+      max-width: 400px;
+      min-width: 400px;
+    }
+
+    .prev-1,
+    .prev-2 {
       top: 40%;
       left: -5%;
     }
 
-    .next-1 {
+    .next-1,
+    .next-2 {
       top: 40%;
       right: -5%;
     }

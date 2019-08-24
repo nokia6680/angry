@@ -67,7 +67,7 @@ if (modalSearch) {
 $(document).ready(function() {
   $('.stars-slider').slick({
     infinite: true,
-    initialSlide: 1,
+    initialSlide: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -78,11 +78,54 @@ $(document).ready(function() {
   });
 });
 
+// Подпишемся на ресайз и продиспатчим его для запуска
+$(window).on('resize', function(e){
+  // Переменная, по которой узнаем запущен слайдер или нет.
+  // Храним её в data
+  var init = $("#gallery-slider").data('init-slider');
+  // Если мобильный
+  if(window.innerWidth < 1024){
+    // Если слайдер не запущен
+    if(init != 1){
+      // Запускаем слайдер и записываем в data init-slider = 1
+      $('#gallery-slider').slick({
+        infinite: true,
+        initialSlide: 0,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        fade: true,
+        arrows: true,
+        prevArrow: '<div class="prev-3"></div>',
+        nextArrow: '<div class="next-3"></div>'
+      }).data({'init-slider': 1});
+    }
+  }
+  // Если десктоп
+  else {
+    // Если слайдер запущен
+    if(init == 1){
+      // Разрушаем слайдер и записываем в data init-slider = 0
+      $('#gallery-slider').slick('unslick').data({'init-slider': 0});
+    }
+  }
+}).trigger('resize');
+
+$(document).ready(function() {
+  $("#up").click(function(event) {
+    $("#gallery-slider").scrollTop($("#gallery-slider").scrollTop() - 310);
+  });
+
+  $("#down").click(function(event) {
+    $("#gallery-slider").scrollTop($("#gallery-slider").scrollTop() + 310);
+  });
+});
+
 /*Слайдер персонажей*/
 $(document).ready(function() {
-  $('.prize-slider').slick({
+  $('.prize-slider--first').slick({
     infinite: true,
-    initialSlide: 1,
+    initialSlide: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
@@ -90,6 +133,21 @@ $(document).ready(function() {
     arrows: true,
     prevArrow: '<div class="prev-1"></div>',
     nextArrow: '<div class="next-1"></div>'
+  });
+});
+
+/*Слайдер персонажей*/
+$(document).ready(function() {
+  $('.prize-slider--second').slick({
+    infinite: true,
+    initialSlide: 0,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    arrows: true,
+    prevArrow: '<div class="prev-2"></div>',
+    nextArrow: '<div class="next-2"></div>'
   });
 });
 

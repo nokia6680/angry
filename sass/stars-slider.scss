@@ -285,22 +285,6 @@
       margin-bottom: 50px;
 
       position: relative;
-
-      &::after {
-        position: absolute;
-        content: '';
-
-        bottom: -25px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 56px;
-        height: 2px;
-
-        background-image: url('../img/slide-line.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
     }
 
     &__description {
@@ -374,7 +358,7 @@
     }
 
     &__description {
-      font-size: 1em;
+      font-size: 1.125em;
       line-height: 1.5;
     }
 
@@ -427,7 +411,7 @@
     }
 
     &__description {
-      font-size: 0.875em;
+      font-size: 1.125em;
       line-height: 1.3;
     }
 
@@ -478,7 +462,7 @@
     }
 
     &__description {
-      font-size: 1em;
+      font-size: 1.25em;
       line-height: 1.5;
     }
 

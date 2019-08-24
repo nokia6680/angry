@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -32,7 +33,7 @@ body {
   height: 100vh;
 
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 
   color: $text-black;
   font-family: $regular-font;
@@ -68,8 +69,8 @@ body {
 }
 
 .body-gallery {
-  background-image: radial-gradient(1080px 1080px at 50% 62.2%, #5db7e1 0%, #4177ba 100%);
-  background-position: center center;
+  background-image: url('../img/gallery-bg.png');
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }

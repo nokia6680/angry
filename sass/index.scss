@@ -26,6 +26,32 @@
   }
 }
 
+@media only screen and (min-width: 375px) and (min-device-height: 700px) {
+  .index {
+    &__wrap {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 88px;
+        height: 55px;
+
+        background-image: url('../img/prize-1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+
+        bottom: -50px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 414px) {
   .index {
     &__wrap {
