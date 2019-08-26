@@ -1,10 +1,10 @@
 .winner {
   @include flex-setting(column, flex-start, center, nowrap);
 
-  padding-top: 50px;
+  padding-top: 10px;
 
   &__title {
-    @include font-setting($regular-font, 2em, 400, #f5e0b8);
+    @include font-setting($regular-font, 1.25em, 400, #f5e0b8);
 
     text-align: center;
     margin-bottom: 20px;
@@ -12,10 +12,28 @@
 
   &__info {
     @include flex-setting(column, flex-start, center, nowrap);
+    width: 100%;
+  }
+
+  &__list {
+    @include flex-setting(column, flex-start, center, nowrap);
+    width: 100%;
+
+    max-height: 180px;
+    overflow-y: scroll;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    width: 50%;
+    @include flex-setting(column, center, center, nowrap);
   }
 
   &__name {
-    @include font-setting($regular-font, 1.75em, 400, #ffffff);
+    @include font-setting($regular-font, 1em, 400, #ffffff);
 
     margin-top: 0;
     margin-bottom: 0;
@@ -34,13 +52,17 @@
 @media only screen and (min-width: 414px) {
   .winner {
     &__title {
-      font-size: 2.25em;
-      max-width: 320px;
+      font-size: 1.625em;
+      max-width: 360px;
       margin-bottom: 20px;
     }
 
+    &__list {
+      max-height: 230px;
+    }
+
     &__name {
-      font-size: 2em;
+      font-size: 1.125em;
     }
 
     &__city {
@@ -57,13 +79,17 @@
 @media only screen and (min-width: 768px) {
   .winner {
     &__title {
-      font-size: 2.5em;
+      font-size: 1.875em;
       max-width: 580px;
       margin-bottom: 30px;
     }
 
+    &__list {
+      max-height: 320px;
+    }
+
     &__name {
-      font-size: 2.5em;
+      font-size: 1.375em;
     }
 
     &__city {
@@ -82,13 +108,17 @@
     padding-top: 0;
 
     &__title {
-      font-size: 2.5em;
+      font-size: 1.5em;
       max-width: 580px;
       margin-bottom: 30px;
     }
 
+    &__list {
+      max-height: 300px;
+    }
+
     &__name {
-      font-size: 2.5em;
+      font-size: 1.125em;
     }
 
     &__city {
@@ -108,13 +138,13 @@
     margin-top: -50px;
 
     &__title {
-      font-size: 2em;
+      font-size: 1.5em;
       max-width: 500px;
-      margin-bottom: 53px;
+      margin-bottom: 30px;
     }
 
     &__name {
-      font-size: 2.5em;
+      font-size: 1.125em;
     }
 
     &__city {
