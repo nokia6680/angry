@@ -2,12 +2,19 @@
   @include flex-setting(column, flex-start, center, nowrap);
 
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 
   &__title {
     @include font-setting($regular-font, 1.25em, 400, #f5e0b8);
 
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 
   &__info {
@@ -16,7 +23,7 @@
   }
 
   &__list {
-    @include flex-setting(column, flex-start, center, nowrap);
+    @include flex-setting(column, flex-start, flex-start, nowrap);
     width: 100%;
 
     max-height: 180px;
@@ -25,11 +32,20 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+
+  &__list::-webkit-scrollbar {
+    width: 0;
   }
 
   &__item {
-    width: 50%;
-    @include flex-setting(column, center, center, nowrap);
+    width: 100%;
+    @include flex-setting(column, center, flex-start, nowrap);
+
+    padding-left: 10%;
   }
 
   &__name {
@@ -78,6 +94,15 @@
 
 @media only screen and (min-width: 768px) {
   .winner {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    transition: 0.2s ease-in;
+
     &__title {
       font-size: 1.875em;
       max-width: 580px;
@@ -105,7 +130,7 @@
 
 @media only screen and (min-width: 1024px) {
   .winner {
-    padding-top: 0;
+    margin-top: -40px;
 
     &__title {
       font-size: 1.5em;
@@ -134,8 +159,9 @@
 
 @media only screen and (min-width: 1366px) {
   .winner {
-    padding-top: 0;
     margin-top: -50px;
+
+    padding: 35px 35px;
 
     &__title {
       font-size: 1.5em;
@@ -159,7 +185,6 @@
 
 @media only screen and (min-width: 1600px) {
   .winner {
-    padding-top: 0;
     margin-top: 30px;
   }
 }

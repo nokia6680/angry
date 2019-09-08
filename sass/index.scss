@@ -5,6 +5,38 @@
 
   &__wrap {
     @include flex-setting(column, flex-start, center, nowrap);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+
+  &__subtitle {
+    width: 100%;
+    text-align: center;
+
+    @include font-setting($regular-font, 1.5em, 500, $text-white);
+  }
+
+  &__list {
+    @include flex-setting(column, flex-start, center, nowrap);
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    @include flex-setting(column, flex-start, center, nowrap);
+    margin-bottom: 15px;
+  }
+
+  &__item-title {
+    @include font-setting($regular-font, 1.375em, 400, $text-white);
+  }
+
+  &__item-name {
+    @include font-setting($regular-font, 1.125em, 300, $text-white);
   }
 
   &__description {
@@ -55,25 +87,19 @@
 @media only screen and (min-width: 414px) {
   .index {
     &__wrap {
-      position: relative;
+      max-width: 360px;
+    }
 
-      &::after {
-        position: absolute;
-        content: '';
+    &__subtitle {
+      font-size: 1.625em;
+    }
 
-        width: 88px;
-        height: 55px;
+    &__item-title {
+      font-size: 1.5em;
+    }
 
-        background-image: url('../img/prize-1.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50% 50%;
-
-        bottom: -50px;
-        left: 50%;
-
-        transform: translateX(-50%);
-      }
+    &__item-name {
+      font-size: 1.25em;
     }
   }
 }
@@ -100,8 +126,6 @@
 
 @media only screen and (min-width: 1024px) {
   .index {
-    align-items: flex-end;
-
     &__description {
       font-size: 1.25em;
       max-width: 592px;
@@ -124,7 +148,11 @@
 
 @media only screen and (min-width: 1280px) {
   .index {
+    align-items: flex-end;
     &__wrap {
+      margin-right: 15%;
+      margin-top: -100px;
+
       &::after {
         width: 176px;
         height: 109px;
@@ -143,6 +171,9 @@
     margin-top: -70px;
 
     &__wrap {
+      margin-right: 15%;
+      margin-top: 0;
+
       &::after {
         width: 132px;
         height: 83px;
